@@ -1,0 +1,62 @@
+{
+  "name": "spark-cli",
+  "description": "Simple Node commandline application for working with your Spark devices and using the Spark Cloud",
+  "version": "1.2.0",
+  "author": "David Middlecamp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spark/spark-cli"
+  },
+  "bin": {
+    "spark": "./bin/spark.js"
+  },
+  "main": "./app.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "glob": "^4.2.1",
+    "hogan.js": "^2.0.0",
+    "moment": "^2.9.0",
+    "request": "^2.46.0",
+    "serialport": "^1.5.0",
+    "when": "^3.7.2",
+    "xtend": "^4.0.0",
+    "node-wifiscanner": "^0.2.0"
+  },
+  "contributors": [
+    {
+      "name": "Kenneth Lim",
+      "url": "https://github.com/kennethlimcp"
+    },
+    {
+      "name": "David Washington",
+      "url": "https://github.com/dwcares"
+    },
+    {
+      "name": "TJ Hunter",
+      "url": "https://github.com/Hypnopompia"
+    },
+    {
+      "name": "Udo Kramer",
+      "url": "https://github.com/optikfluffel"
+    },
+    {
+      "name": "vk2tds",
+      "url": "https://github.com/vk2tds"
+    },
+    {
+      "name": "Emily Rose",
+      "url": "https://github.com/emilyrose"
+    },
+    {
+      "name": "Kyle Marsh",
+      "url": "https://github.com/kylemarsh"
+    },
+    {
+      "name": "Harrison Jones",
+      "url": "https://github.com/harrisonhjones"
+    }
+  ],
+  "preferGlobal": true
+}
