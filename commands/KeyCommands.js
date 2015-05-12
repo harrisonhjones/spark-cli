@@ -1,6 +1,6 @@
 /**
  ******************************************************************************
- * @file    js/commands/KeyCommands.js
+ * @file    commands/KeyCommands.js
  * @author  David Middlecamp (david@spark.io)
  * @company Spark ( https://www.spark.io/ )
  * @source https://github.com/spark/spark-cli
@@ -24,7 +24,7 @@ You should have received a copy of the GNU Lesser General Public
 License along with this program; if not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************
  */
- 
+
 var when = require('when');
 var sequence = require('when/sequence');
 var readline = require('readline');
@@ -391,6 +391,9 @@ KeyCommands.prototype = extend(BaseCommand.prototype, {
 		var allDone = sequence([
 			function() {
 				return dfu.isDfuUtilInstalled();
+			},
+			function() {
+				return dfu.findCompatibleDFU();
 			},
 			function() {
 				return dfu.writeServerKey(filename, false);

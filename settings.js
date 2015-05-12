@@ -1,6 +1,6 @@
 /**
  ******************************************************************************
- * @file    js/settings.js
+ * @file    settings.js
  * @author  David Middlecamp (david@spark.io)
  * @company Spark ( https://www.spark.io/ )
  * @source https://github.com/spark/spark-cli
@@ -36,7 +36,6 @@ var settings = {
 	apiUrl: "https://api.spark.io",
 	access_token: null,
 	minimumApiDelay: 500,
-
 	//useOpenSSL: true,
 	useSudoForDfu: false,
 
@@ -44,6 +43,7 @@ var settings = {
 	MAX_FILE_SIZE: 1024 * 1024 * 2,
 
 	overridesFile: null,
+	wirelessSetupFilter: /^Photon-.*$/,
 
 	notSourceExtensions: [
 		".ds_store",
